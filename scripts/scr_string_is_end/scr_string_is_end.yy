@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_string_is_end",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_string_is_end",
+  "parent":{
+    "name":"string",
+    "path":"folders/Object/string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

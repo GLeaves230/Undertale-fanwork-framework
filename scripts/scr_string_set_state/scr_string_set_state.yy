@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_string_set_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_string_set_state",
+  "parent":{
+    "name":"string",
+    "path":"folders/Object/string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

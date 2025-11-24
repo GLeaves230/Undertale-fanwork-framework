@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_get_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_string",
+  "parent":{
+    "name":"get_string",
+    "path":"folders/Object/string/get_string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
