@@ -11,7 +11,7 @@ if (is_update){
 	var Row = 0;
 
 	the_delta++;
-	if (the_delta>delta_Time){
+	if (the_delta>u_string.u_delta){
 		the_delta = 0;
 		the_pos++;
 		if (the_pos>ds_list_size(text)){
@@ -20,7 +20,7 @@ if (is_update){
 		else{
 			var char = ds_list_find_value(text,the_pos-1);
 			var char_int = ord(char.char);
-			var the_snd = scr_get_txtsnd(snd_name)
+			var the_snd = scr_get_txtsnd(u_string.u_snd)
 			if (char_int>=48&&char_int<=57||
 				char_int>=97&&char_int<=122||
 				char_int>=65&&char_int<=90||

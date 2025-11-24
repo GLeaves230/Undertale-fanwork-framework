@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_u_sting",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_u_sting",
+  "parent":{
+    "name":"get_string",
+    "path":"folders/Object/string/get_string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

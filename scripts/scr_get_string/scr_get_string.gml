@@ -1,12 +1,7 @@
 function scr_get_string(string_name = ""){
 	
-	u_string = {
-	}
-	u_string.u_text = "Error!";
-	u_string.u_delta = 3;
-	u_string.u_font = DeterminationMono18;
-	u_string.u_snd = "1";
-
+	u_string = scr_u_sting();
+	
 	//get_string 获取对应字符串
 	switch global.Language{
 		case "en":
@@ -35,6 +30,9 @@ function scr_get_string(string_name = ""){
 				case "intro7":
 					u_string.u_text = "Legends say that thos\nwho climb the mountain\nnever return.";
 					break;
+				case "title":
+					u_string.u_text = "[press z or enter]"
+					break;
 				default:
 					break;
 			}
@@ -51,10 +49,6 @@ function scr_get_string(string_name = ""){
 		case "intro6_1":
 		case "intro6_2":
 		case "intro7":
-		case "intro8":
-		case "intro9":
-		case "intro10":
-		case "intro11":
 			u_string.u_snd = "2";
 		default:
 			break;
@@ -66,6 +60,9 @@ function scr_get_string(string_name = ""){
 				case "intro6_1":
 				case "intro6_2":
 					u_string.u_font = DeterminationMono22;
+					break;
+				case "title":
+					u_string.u_font =MarsNeedsCunnilingus14;
 					break;
 				default:
 					break;
@@ -80,6 +77,15 @@ function scr_get_string(string_name = ""){
 				default:
 					break;
 			}
+		default:
+			break;
+	}
+	
+	//get_is_skip 获取对应延迟
+	switch string_name{
+		case "title":
+			u_string.u_is_skip = true;
+			break;
 		default:
 			break;
 	}

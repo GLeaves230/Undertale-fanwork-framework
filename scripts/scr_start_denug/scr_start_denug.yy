@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_start_denug",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_start_denug",
+  "parent":{
+    "name":"Object",
+    "path":"folders/Object.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

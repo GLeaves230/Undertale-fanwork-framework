@@ -1,19 +1,17 @@
-function scr_create_text(text,depth,font = noone,delta_Time = 0,snd_name = "")
+function scr_create_text(x=0,y=0,u_text = "",depth = 0)
 {
-	
-	if (text==""){
-		return noone;
+	u_string = scr_get_string(u_text);
+	u_text = instance_create_depth(0,0,depth-1,obj_text);
+	length = string_length(u_string.u_text);
+	for (i=0;i<length;i++){
+		ds_list_add(u_text.text,scr_create_char(string_char_at(u_string.u_text,i+1),depth,u_string.u_font));
 	}
-	else{
-		
-		u_text = instance_create_depth(0,0,depth-1,obj_text);
-		length = string_length(text);
-		for (i=0;i<length;i++){
-			ds_list_add(u_text.text,scr_create_char(string_char_at(text,i+1),depth,font));
-		}
-		u_text.the_pos_max = length;
-		u_text.delta_Time = delta_Time;
-		u_text.snd_name = snd_name;
-		return u_text;
+	u_text.the_pos_max = length;
+	u_text.u_string = u_string;
+	if (u_string.u_is_skip){
+		scr_skip_string(u_text);
 	}
+	u_text.x = x;
+	u_text.y = y;
+	return u_text;
 }

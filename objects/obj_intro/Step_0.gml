@@ -41,24 +41,15 @@ if (intro_time>=intro_end_time){
 				case 6:
 					name = "intro";
 					name+= string(intro_phase+1);
-					u_string = scr_get_string(name);
-					text = scr_create_text(u_string.u_text,depth-1,u_string.u_font,u_string.u_delta,u_string.u_snd);
-					text.y = 320;
-					text.x = 100;
+					text = scr_create_text(100,320,name,depth-1);
 					break;
 				case 10:
 					intro_end_time = 1690;
 					break;
 				case 5:
-					u_string = scr_get_string("intro6_1");
-					text = scr_create_text(u_string.u_text,depth-1,u_string.u_font,u_string.u_delta,u_string.u_snd);
-					u_string = scr_get_string("intro6_2");
-					text2 = scr_create_text(u_string.u_text,depth-1,u_string.u_font,u_string.u_delta,u_string.u_snd);
+					text = scr_create_text(200,330,"intro6_1",depth-1);
+					text2 = scr_create_text(260,370,"intro6_2",depth-1);
 					scr_string_set_state(text2,false,false);
-					text.y = 330;
-					text.x = 200;
-					text2.y = 370;
-					text2.x = 260;
 					break;
 				default:
 					break;
