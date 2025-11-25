@@ -1,6 +1,6 @@
-function scr_create_text(x=0,y=0,u_text = "",depth = 0)
+function scr_create_text(x=0,y=0,u_text = "",depth=0,change_string = "")
 {
-	u_string = scr_get_string(u_text);
+	u_string = scr_get_string(u_text,change_string);
 	u_text = instance_create_depth(0,0,depth-1,obj_text);
 	length = string_length(u_string.u_text);
 	for (i=0;i<length;i++){

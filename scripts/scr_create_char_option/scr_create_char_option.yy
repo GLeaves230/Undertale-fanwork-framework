@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_char_option",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_char_option",
+  "parent":{
+    "name":"string",
+    "path":"folders/Object/string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

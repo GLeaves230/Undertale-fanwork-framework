@@ -36,7 +36,7 @@
     {"$GMObjectProperty":"v2","%Name":"is_draw_RoomMesege","filters":[],"listItems":[],"multiselect":false,"name":"is_draw_RoomMesege","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"room_id","filters":[],"listItems":[],"multiselect":false,"name":"room_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"min_room_id","filters":[],"listItems":[],"multiselect":false,"name":"min_room_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_intro","path":"rooms/room_intro/room_intro.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_intro","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"max_room_id","filters":[],"listItems":[],"multiselect":false,"name":"max_room_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_title","path":"rooms/room_title/room_title.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_title","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"max_room_id","filters":[],"listItems":[],"multiselect":false,"name":"max_room_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"room_menu","path":"rooms/room_menu/room_menu.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"room_menu","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

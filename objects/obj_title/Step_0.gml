@@ -7,6 +7,6 @@ if (intronoise!=noone){
 	if (!audio_is_playing(intronoise)){
 		audio_stop_sound(intronoise);
 		intronoise = noone;
-		text = scr_create_text(0,0,"title",depth-1)
+		text = scr_create_text(200,300,"title",depth-1)
 	}
 }

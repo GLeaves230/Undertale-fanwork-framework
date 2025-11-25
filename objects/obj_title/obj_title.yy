@@ -13,8 +13,8 @@
   "name":"obj_title",
   "overriddenProperties":[],
   "parent":{
-    "name":"Object",
-    "path":"folders/Object.yy",
+    "name":"screen",
+    "path":"folders/Object/screen.yy",
   },
   "parentObjectId":null,
   "persistent":false,

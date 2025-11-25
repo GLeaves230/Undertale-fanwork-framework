@@ -1,11 +1,11 @@
 for (i = 0;i<ds_list_size(text);i++){
 	var char = ds_list_find_value(text,i);
 	char.is_draw = is_draw;
-}
-for (i = 0;i<ds_list_size(text);i++){
-	var char = ds_list_find_value(text,i);
 	char.is_update = is_update;
+	char.colour = u_string.u_col;
+	char.motion_state = u_string.motion_state;
 }
+
 if (is_update){
 	var Line = 0;
 	var Row = 0;
@@ -33,9 +33,14 @@ if (is_update){
 			}
 		}
 	}
+	var pos_x = 0;
+	var pos_y = 0;
 	for (i = 0;i<the_pos;i++){
 		var char = ds_list_find_value(text,i);
-		if (char.char != "\r"){
+		if (char.char == "\v"){
+			pos_x+=u_string.char_x1_offset;
+		}
+		else if (char.char != "\r"){
 			Line++;
 		}
 		if (char.char=="\n"){
@@ -43,8 +48,8 @@ if (is_update){
 			Row++;
 		}
 		else{
-			char.x = Line * (font_get_size(char.font))+x;
-			char.y = Row * (font_get_size(char.font)+20)+y;
+			char.x = Line * (font_get_size(char.font)+u_string.char_x_offset)+x+pos_x;
+			char.y = Row * (font_get_size(char.font)+20+u_string.char_y_offset)+y+pos_y;
 			if (char.is_hide){
 				char.is_hide = false;
 			}
