@@ -44,7 +44,7 @@ if (intro_time>=intro_end_time){
 					text = scr_create_text(100,320,name,depth-1);
 					break;
 				case 10:
-					intro_end_time = 1690;
+					intro_end_time = 1680;
 					break;
 				case 5:
 					text = scr_create_text(200,330,"intro6_1",depth-1);
